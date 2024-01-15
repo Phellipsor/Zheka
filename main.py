@@ -7,6 +7,10 @@ from data import get_news
 bot = TeleBot("6607124610:AAF0rMkhABJvWl5x2Hs7g-_oz8UVzPpCRvk")
 zheka = 353616677
 
+@bot.message_handler(commands=["start"])
+def start(msg):
+    bot.send_message(msg.chat.id, "Отримаєш звіт на тиждень о 8 ранку понеділка.")
+
 def schedule_checker():
     while True:
         schedule.run_pending()
