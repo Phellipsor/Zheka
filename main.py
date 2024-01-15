@@ -23,4 +23,5 @@ def func_to_run():
 if __name__ == "__main__":
     schedule.every().monday.at("08:00", "Europe/Kyiv").do(func_to_run)
     Thread(target=schedule_checker).start()
-    bot.infinity_polling()
+
+bot.infinity_polling()
