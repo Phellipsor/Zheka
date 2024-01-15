@@ -4,6 +4,7 @@ gunicorn==21.2.0
 idna==3.6
 packaging==23.2
 pyTelegramBotAPI==4.15.2
+pytz==2023.3.post1
 requests==2.31.0
 schedule==1.2.1
 telebot==0.0.5
